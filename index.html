@@ -13,7 +13,8 @@
 		<link rel="stylesheet" href="assets/css/main.css"/>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<link rel="icon" href="https://mrmandeep.me/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.ico" >
+    <link rel="icon" type="image/gif" href="animated_favicon.gif" >
 	</head>
 	<body>
 		<div id="wrapper">
@@ -22,7 +23,7 @@
 				<header id="header" class="fullscreen">
 						<!-- <h1>Adam Jensen</h1> -->
 						<p id="quote">I CAN &gt; CAN I</p>
-						<!-- <p id="info"> My fav quotes! Updates once in 6 secs &#9786;</p> -->
+						<p id="info"> My fav quotes! Updates once in 6 secs &#9786;</p>
 					</header>
 					<footer id="footer">
 						<span class="copyright">Designed by <a href="http://html5up.net">HTML5 UP</a>.</span>
@@ -33,11 +34,7 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.12.2/JSXTransformer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.12.2/react.js"></script>
-		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
+		<script src="assets/js/random.js"> </script>
 		<script type="text/jsx">
 		 var RibbonImage = React.createClass({
 			 render: function(){
@@ -82,6 +79,11 @@
 	 React.render(<Quote />,document.getElementById('quote'));
 	 React.render(<Ribbon repo="https://github.com/daxlab/quotes"/>,document.getElementById('ribbon'))
 
+	 </script>
+	 <script>
+		 window.onload = function() { document.body.className = ''; }
+		 window.ontouchmove = function() { return false; }
+		 window.onorientationchange = function() { document.body.scrollTop = 0; }
 	 </script>
 	</body>
 </html>
