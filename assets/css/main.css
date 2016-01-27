@@ -447,7 +447,8 @@
 		position: relative;
 		text-align: center;
 		top: -1em;
-		vertical-align: middle;
+		vertical-align: top;
+		margin-top: 160px;
 		width: 90%;
 	}
 
@@ -459,7 +460,7 @@
 		}
 
 		#header p {
-			font-size: 2.25em;
+			font-size: 2em;
 			margin: 0.75em 0 0.25em 0;
 			opacity: 0.75;
 		}
